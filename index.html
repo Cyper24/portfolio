@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><!--
+ ______  __    __   ______   _______  ______  _______   ________  _______         _______  __      __        ________   ______   __       __  _______    ______   _______   _______   _______    ______   _______   __    __   ______  ________  ______   ______   __    __ 
+|      \|  \  |  \ /      \ |       \|      \|       \ |        \|       \       |       \|  \    /  \      |        \ /      \ |  \     /  \|       \  /      \ |       \ |       \ |       \  /      \ |       \ |  \  |  \ /      \|        \|      \ /      \ |  \  |  \
+ \$$$$$$| $$\ | $$|  $$$$$$\| $$$$$$$\\$$$$$$| $$$$$$$\| $$$$$$$$| $$$$$$$\      | $$$$$$$\\$$\  /  $$       \$$$$$$$$|  $$$$$$\| $$\   /  $$| $$$$$$$\|  $$$$$$\| $$$$$$$\| $$$$$$$\| $$$$$$$\|  $$$$$$\| $$$$$$$\| $$  | $$|  $$$$$$\\$$$$$$$$ \$$$$$$|  $$$$$$\| $$\ | $$
+  | $$  | $$$\| $$| $$___\$$| $$__/ $$ | $$  | $$__| $$| $$__    | $$  | $$      | $$__/ $$ \$$\/  $$          | $$   | $$__| $$| $$$\ /  $$$| $$__/ $$| $$__| $$| $$__| $$| $$__/ $$| $$__| $$| $$  | $$| $$  | $$| $$  | $$| $$   \$$  | $$     | $$  | $$  | $$| $$$\| $$
+  | $$  | $$$$\ $$ \$$    \ | $$    $$ | $$  | $$    $$| $$  \   | $$  | $$      | $$    $$  \$$  $$           | $$   | $$    $$| $$$$\  $$$$| $$    $$| $$    $$| $$    $$| $$    $$| $$    $$| $$  | $$| $$  | $$| $$  | $$| $$        | $$     | $$  | $$  | $$| $$$$\ $$
+  | $$  | $$\$$ $$ _\$$$$$$\| $$$$$$$  | $$  | $$$$$$$\| $$$$$   | $$  | $$      | $$$$$$$\   \$$$$            | $$   | $$$$$$$$| $$\$$ $$ $$| $$$$$$$ | $$$$$$$$| $$$$$$$\| $$$$$$$ | $$$$$$$\| $$  | $$| $$  | $$| $$  | $$| $$   __   | $$     | $$  | $$  | $$| $$\$$ $$
+ _| $$_ | $$ \$$$$|  \__| $$| $$      _| $$_ | $$  | $$| $$_____ | $$__/ $$      | $$__/ $$   | $$             | $$   | $$  | $$| $$ \$$$| $$| $$      | $$  | $$| $$  | $$| $$      | $$  | $$| $$__/ $$| $$__/ $$| $$__/ $$| $$__/  \  | $$    _| $$_ | $$__/ $$| $$ \$$$$
+|   $$ \| $$  \$$$ \$$    $$| $$     |   $$ \| $$  | $$| $$     \| $$    $$      | $$    $$   | $$             | $$   | $$  | $$| $$  \$ | $$| $$      | $$  | $$| $$  | $$| $$      | $$  | $$ \$$    $$| $$    $$ \$$    $$ \$$    $$  | $$   |   $$ \ \$$    $$| $$  \$$$
+ \$$$$$$ \$$   \$$  \$$$$$$  \$$      \$$$$$$ \$$   \$$ \$$$$$$$$ \$$$$$$$        \$$$$$$$     \$$              \$$    \$$   \$$ \$$      \$$ \$$       \$$   \$$ \$$   \$$ \$$       \$$   \$$  \$$$$$$  \$$$$$$$   \$$$$$$   \$$$$$$    \$$    \$$$$$$  \$$$$$$  \$$   \$$
+                                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                                            
+  -->                                                                                                                                                                                                                                                                          
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+    <link rel="shortcut icon" type="image/png" href="images/ico.png"/>
+
+    <!-- Stylesheets
+    ============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!--[if lt IE 9]>
+    	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+    <!-- External JavaScripts
+    ============================================= -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript">
+    $(function() {
+
+      //This setTimeout function execute or call automatically when 5 second completed.
+      setTimeout(function() {
+        $("#example").fadeOut(0);
+      }, 2500);
+
+      // $('#example2').click(function() {
+      //   //This is used for show the div.
+      //   $('#example').show();
+
+      //   //This setTimeout function execute when click on show div buton and hide automatically.
+      //   setTimeout(function() {
+      //     $("#example").fadeOut(1500);
+      //   }, 3000);
+
+      // });
+      setTimeout(function() {
+        $("#logo").show();
+      }, 0);
+      setTimeout(function() {
+        $("#logoX").show();
+      }, 2500);
+      setTimeout(function() {
+        $("#example3").fadeOut();
+      }, 0);
+      setTimeout(function() {
+        $("#example3").show();
+      }, 1000);
+    });
+  </script>
+
+    <!-- Document Title
+    ============================================= -->
+	<title>XXIV</title>
+
+</head>
+
+<body class="stretched" style="background-color: #000000;">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix" style="background-color: #000000;">
+
+        <!-- Header
+        ============================================= -->
+        <header  style="background-color: transparent;">
+
+            <div>
+
+                <div style="background-color: transparent;">
+
+                    <!-- Logo
+                    ============================================= -->
+                    <div id="logo" style="display: none">
+                        <a href="index.html" class="standard-logo" ><img src="images/indexQ.png" alt="Canvas Logo" style="height: 150px;"></a>
+                        <a href="index.html" class="retina-logo" ><img src="images/indexQ.png" alt="Canvas Logo" style="height: 150px;"></a>
+                    </div>
+                        <CENTER><div style="display: inline-block;background-color:#000">
+                            <a href="https://web.facebook.com/nico.aditya.338658" class="standard-logo" ><img src="images/fb.png" alt="Canvas Logo" style="height: 30px; float:right; vertical-align: center"></a>
+                            <a href="mailto:nicoaditya745@gmail.com" class="standard-logo" ><img src="images/mail.png" alt="Canvas Logo" style="height: 30px; float:right; vertical-align: center"></a>
+                            <a href="https://www.artstation.com/xxiv" class="standard-logo" ><img src="images/art.png" alt="Canvas Logo" style="height: 30px; float:right; vertical-align: center"></a>
+                            <a href="https://www.instagram.com/noo.dll/" class="standard-logo" ><img src="images/ig.png" alt="Canvas Logo" style="height: 30px; float:right; vertical-align: center"></a>
+                        </div></CENTER>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>>
+
+        <section>
+
+            <div >
+
+                <div  class="center" style="display: inline-block;text-align: center;position: absolute;padding-left: 100px;padding-right: 15px;">
+
+                <div id="example3" class="portfolio-3 portfolio-masonry clearfix">
+
+                        <article class="portfolio-item pf-illustrations">
+                            <div class="portfolio-image">
+                                    <img height="300" src="images/ss1.jpg">
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>Horseless Headless Horsemann's Headtaker</h3>
+                            </div>
+                        </article>
+                        <article class="portfolio-item pf-illustrations">
+                            <div class="portfolio-image">
+                                    <img height="300" src="images/ss2.jpg">        
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>Ullapool Caber</h3>
+                            </div>
+                        </article>
+                         <article class="portfolio-item pf-illustrations">
+                            <div class="portfolio-image">
+                                    <img height="300" src="images/ss3.jpg">
+                                
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>Scorch Shot</h3>
+                            </div>
+                        </article>
+                        <article class="portfolio-item pf-illustrations">
+                            <div class="portfolio-image">
+                                    <img height="300" src="images/ss6.jpg">
+                                    
+                                </a>
+                                
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>Tong</h3>
+                            </div>
+                        </article>
+                        <article class="portfolio-item pf-illustrations">
+                            <div class="portfolio-image">
+                                    <img height="300" src="images/ss7.jpg">
+                                    
+                                </a>
+                                
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>JPNIGHT</h3>
+                            </div>
+                        </article>
+                        <article class="portfolio-item pf-illustrations">
+                            <div class="portfolio-image">
+                                    <img height="300" src="images/ss8.jpg">
+                                    
+                                </a>
+                                
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>LoWPoly</h3>
+                            </div>
+                        </article>
+                        <article class="portfolio-item pf-illustrations">
+                            <div class="portfolio-image">
+                                    <img height="300" src="images/ss9.jpg">
+                                    
+                                </a>
+                                
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>Transparent</h3>
+                            </div>
+                        </article>
+                        <article class="portfolio-item pf-illustrations">
+                            <div class="portfolio-image">
+                                    <img height="300" src="images/ss10.jpg">
+                                    
+                                </a>
+                                
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>Way</h3>
+                            </div>
+                        </article>
+                        <article class="portfolio-item pf-illustrations">
+                            <div class="portfolio-image">
+                                    <img height="300" src="images/ss11.jpg">
+                                    
+                                </a>
+                                
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>18</h3>
+                            </div>
+                        </article>
+                        <article class="portfolio-item pf-illustrations">
+                            <div class="portfolio-image">
+                                    <img height="300" src="images/ss12.jpg">
+                                    
+                                </a>
+                                
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>Wnight</h3>
+                            </div>
+                        </article>
+                        <article class="portfolio-item pf-illustrations">
+                            <div class="portfolio-image">
+                                    <img height="300" src="images/ss13.jpg">
+                                    
+                                </a>
+                                
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>Dark</h3>
+                            </div>
+                        </article>
+                        <article class="portfolio-item pf-illustrations">
+                            <div class="portfolio-image">
+                                    <img height="300" src="images/ss14.jpg">
+                                    
+                                </a>
+                                
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>Diee</h3>
+                            </div>
+                        </article>
+                        <article class="portfolio-item pf-illustrations">
+                            <div class="portfolio-image">
+                                    <img height="300" src="images/ss15.jpg">
+                                    
+                                </a>
+                                
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>Forest</h3>
+                            </div>
+                        </article>
+                        <article class="portfolio-item pf-illustrations">
+                            <div class="portfolio-image">
+                                    <img height="300" src="images/ss16.jpg">
+                                    
+                                </a>
+                                
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>Tanked</h3>
+                            </div>
+                        </article>
+                        <article class="portfolio-item pf-illustrations">
+                            <div class="portfolio-image">
+                                    <img height="300" src="images/ss4.jpg">
+                                    
+                                </a>
+                                
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>MAC-10</h3>
+                            </div>
+                        </article>
+                        <article class="portfolio-item pf-illustrations">
+                            <div class="portfolio-image">
+                                    <img height="300" src="images/ss17.jpg">
+                                    
+                                </a>
+                                
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>Snowball Launcer</h3>
+                            </div>
+                        </article>
+                        <article class="portfolio-item pf-illustrations">
+                            <div class="portfolio-image">
+                                    <img height="300" src="images/ss5.jpg">
+                                    
+                                </a>
+                                
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>Revolver</h3>
+                            </div>
+                        </article>
+
+        </section>
+
+                </div>
+
+
+            </div>
+
+        </div><!-- #header end -->
+
+    </div><!-- #wrapper end -->
+
+    <!-- Go To Top
+    ============================================= -->
+    <!-- <div id="gotoTop" class="icon-angle-up"></div> -->
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+
+
+</body>
+</html>

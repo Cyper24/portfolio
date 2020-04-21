@@ -1,0 +1,9 @@
+.toggle-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 2000ms ease-in-out;
+}
+
+.toggle-content.is-visible {
+	max-height: 999em;
+}
